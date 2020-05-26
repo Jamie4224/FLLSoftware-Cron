@@ -1,7 +1,6 @@
 FROM php:7.4-cli
 
-RUN apt-get update \
-    && docker-php-ext-install mcrypt pdo_mysql
+RUN apt-get update
 
 WORKDIR /usr/src/app
 RUN mkdir -p repository
